@@ -319,6 +319,24 @@ namespace TemporalToolkit.Tests
             Assert.IsFalse(te.Includes(new DateTime(2011, 6, 19)));
         }
 
+        [Test]
+        public void ComplexExpressions()
+        {
+            TemporalExpression te;
+            te = (new TEWeekDay(DayOfWeek.Tuesday) | new TEWeekDay(DayOfWeek.Friday));
+            te &= new TEInterval(new DateTime(2010, 6, 1), 2, IntervalPrecision.Weeks);
+
+            Assert.IsTrue(te.Includes(new DateTime(2010,6,1)));
+            Assert.IsTrue(te.Includes(new DateTime(2010, 6, 4)));
+            Assert.IsTrue(te.Includes(new DateTime(2010, 6, 15)));
+            Assert.IsTrue(te.Includes(new DateTime(2010, 6, 18)));
+
+            Assert.IsFalse(te.Includes(new DateTime(2010, 6, 8)));
+            Assert.IsFalse(te.Includes(new DateTime(2010, 6, 11)));
+            Assert.IsFalse(te.Includes(new DateTime(2010, 6, 10)));
+            Assert.IsFalse(te.Includes(new DateTime(2010, 6, 16)));
+
+        }
 
     }
 }

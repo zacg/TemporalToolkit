@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TemporalExpressions\TEHour.cs" />
     <Compile Include="Utils\DateDifference.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Extensions\DateExtensions.cs" />
@@ -62,10 +63,6 @@
     <Compile Include="TemporalExpressions\TEMonth.cs" />
     <Compile Include="TemporalExpressions\TEWeekDay.cs" />
     <Compile Include="TemporalExpressions\TEYear.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Liscense.txt" />
-    <Content Include="ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

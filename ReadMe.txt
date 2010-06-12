@@ -12,7 +12,18 @@
  The temporal expressions are based on a paper by Martin Fowler (www.martinfowler.com/apsupp/recurring.pdf).
  and the ruby runt library (www.runt.rubyforge.org)
  
+
+------------------------------
+| Development/Building
+------------------------------ 
+ Requirements: Visual Studio 2008
+	       NUnit
  
+ The solution is organized into 2 projects: the toolkit library and the unit tests. Running the unit tests
+requires NUnit.
+
+ To create new temporal expressions just inherit from TemporalExpression.
+
 
 ------------------------------
 | Getting Started
@@ -28,8 +39,8 @@
             VB.NET: Imports TemporalToolkit.TemporalExpressions
         
         Then use operators: &,|,- to build temporal expressions.
-          TemporalExpression te = new TEYear(2010) & TEMonthInDay(1,3);
-          bool result = te.Includes(new DateTime(2010,1,1));
+          TemporalExpression te = new TEYear(2010) & TEMDayOfMonth(DayOfWeek.Monday, 1);
+          bool result = te.Includes(new DateTime(2010,1,6));
         
     ---------------------------
     | Using Date Extension Methods
