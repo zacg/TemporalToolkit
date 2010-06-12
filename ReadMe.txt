@@ -20,9 +20,9 @@
 	       NUnit
  
  The solution is organized into 2 projects: the toolkit library and the unit tests. Running the unit tests
-requires NUnit.
+ requires NUnit.
 
- To create new temporal expressions just inherit from TemporalExpression.
+ To create new temporal expressions just create a class that inherits from the TemporalExpression class.
 
 
 ------------------------------
@@ -39,7 +39,7 @@ requires NUnit.
             VB.NET: Imports TemporalToolkit.TemporalExpressions
         
         Then use operators: &,|,- to build temporal expressions.
-          TemporalExpression te = new TEYear(2010) & TEMDayOfMonth(DayOfWeek.Monday, 1);
+          TemporalExpression te = new TEYear(2010) & TEDayOfMonth(DayOfWeek.Monday, 1);
           bool result = te.Includes(new DateTime(2010,1,6));
         
     ---------------------------

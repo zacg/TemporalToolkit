@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TemporalExpressions\TEHour.cs" />
+    <Compile Include="TemporalExpressions\TEMinute.cs" />
+    <Compile Include="TemporalExpressions\TESecond.cs" />
     <Compile Include="Utils\DateDifference.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Extensions\DateExtensions.cs" />

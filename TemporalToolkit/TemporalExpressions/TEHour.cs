@@ -41,10 +41,19 @@ namespace TemporalToolkit.TemporalExpressions
         /// <returns></returns>
         public override bool Includes(DateTime aDate)
         {
+            bool result;
+            
             if (this.End.HasValue)
-                return (aDate.Hour >= this.Start && aDate.Hour <= this.End.Value);
+            {
+                if(this.End.Value > this.Start)
+                    result = (aDate.Hour >= this.Start && aDate.Hour <= this.End.Value);
+                else
+                    result = (aDate.Hour >= this.Start || aDate.Hour <= this.End.Value);
+            }
             else
-                return (this.Start == aDate.Hour);
+                result = (this.Start == aDate.Hour);
+
+            return result;
         }
     }
 }

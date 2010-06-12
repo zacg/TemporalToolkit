@@ -43,24 +43,20 @@ namespace TemporalToolkit.TemporalExpressions
         /// <returns></returns>
         public override bool Includes(DateTime aDate)
         {
-
+            bool result;
+            
             if (this.End.HasValue)
             {
                 //range
                 if (this.End.Value >= this.Start)
-                {
-                    return (aDate.DayOfWeek <= this.End.Value && aDate.DayOfWeek >= this.Start);
-                }
+                     result = (aDate.DayOfWeek <= this.End.Value && aDate.DayOfWeek >= this.Start);
                 else
-                {
-                    return (aDate.DayOfWeek <= this.End.Value || aDate.DayOfWeek >= this.Start);
-                }
+                     result = (aDate.DayOfWeek <= this.End.Value || aDate.DayOfWeek >= this.Start);
             }
             else
-            {
-                //single day
-                return (this.Start == aDate.DayOfWeek);
-            }
+               result = (this.Start == aDate.DayOfWeek);
+
+            return result;
         }
     }
 }
