@@ -87,5 +87,167 @@ namespace TemporalToolkit.Tests
             Assert.AreEqual(4, new DateTime(2010, 12, 1).Quarter());
         }
 
+        [Test]
+        public void QuarterDiffYearStart()
+        {
+
+            Assert.AreEqual(1, new DateTime(2010, 1, 1).Quarter(Month.January));
+            Assert.AreEqual(1, new DateTime(2010, 2, 1).Quarter(Month.January));
+            Assert.AreEqual(1, new DateTime(2010, 3, 1).Quarter(Month.January));
+            Assert.AreEqual(2, new DateTime(2010, 4, 1).Quarter(Month.January));
+            Assert.AreEqual(2, new DateTime(2010, 5, 1).Quarter(Month.January));
+            Assert.AreEqual(2, new DateTime(2010, 6, 1).Quarter(Month.January));
+            Assert.AreEqual(3, new DateTime(2010, 7, 1).Quarter(Month.January));
+            Assert.AreEqual(3, new DateTime(2010, 8, 1).Quarter(Month.January));
+            Assert.AreEqual(3, new DateTime(2010, 9, 1).Quarter(Month.January));
+            Assert.AreEqual(4, new DateTime(2010, 10, 1).Quarter(Month.January));
+            Assert.AreEqual(4, new DateTime(2010, 11, 1).Quarter(Month.January));
+            Assert.AreEqual(4, new DateTime(2010, 12, 1).Quarter(Month.January));
+
+            Assert.AreEqual(4, new DateTime(2010, 1, 1).Quarter(Month.February));
+            Assert.AreEqual(1, new DateTime(2010, 2, 1).Quarter(Month.February));
+            Assert.AreEqual(1, new DateTime(2010, 3, 1).Quarter(Month.February));
+            Assert.AreEqual(1, new DateTime(2010, 4, 1).Quarter(Month.February));
+            Assert.AreEqual(2, new DateTime(2010, 5, 1).Quarter(Month.February));
+            Assert.AreEqual(2, new DateTime(2010, 6, 1).Quarter(Month.February));
+            Assert.AreEqual(2, new DateTime(2010, 7, 1).Quarter(Month.February));
+            Assert.AreEqual(3, new DateTime(2010, 8, 1).Quarter(Month.February));
+            Assert.AreEqual(3, new DateTime(2010, 9, 1).Quarter(Month.February));
+            Assert.AreEqual(3, new DateTime(2010, 10, 1).Quarter(Month.February));
+            Assert.AreEqual(4, new DateTime(2010, 11, 1).Quarter(Month.February));
+            Assert.AreEqual(4, new DateTime(2010, 12, 1).Quarter(Month.February));
+
+            Assert.AreEqual(4, new DateTime(2010, 1, 1).Quarter(Month.March));
+            Assert.AreEqual(4, new DateTime(2010, 2, 1).Quarter(Month.March));
+            Assert.AreEqual(1, new DateTime(2010, 3, 1).Quarter(Month.March));
+            Assert.AreEqual(1, new DateTime(2010, 4, 1).Quarter(Month.March));
+            Assert.AreEqual(1, new DateTime(2010, 5, 1).Quarter(Month.March));
+            Assert.AreEqual(2, new DateTime(2010, 6, 1).Quarter(Month.March));
+            Assert.AreEqual(2, new DateTime(2010, 7, 1).Quarter(Month.March));
+            Assert.AreEqual(2, new DateTime(2010, 8, 1).Quarter(Month.March));
+            Assert.AreEqual(3, new DateTime(2010, 9, 1).Quarter(Month.March));
+            Assert.AreEqual(3, new DateTime(2010, 10, 1).Quarter(Month.March));
+            Assert.AreEqual(3, new DateTime(2010, 11, 1).Quarter(Month.March));
+            Assert.AreEqual(4, new DateTime(2010, 12, 1).Quarter(Month.March));
+
+            Assert.AreEqual(4, new DateTime(2010, 1, 1).Quarter(Month.April));
+            Assert.AreEqual(4, new DateTime(2010, 2, 1).Quarter(Month.April));
+            Assert.AreEqual(4, new DateTime(2010, 3, 1).Quarter(Month.April));
+            Assert.AreEqual(1, new DateTime(2010, 4, 1).Quarter(Month.April));
+            Assert.AreEqual(1, new DateTime(2010, 5, 1).Quarter(Month.April));
+            Assert.AreEqual(1, new DateTime(2010, 6, 1).Quarter(Month.April));
+            Assert.AreEqual(2, new DateTime(2010, 7, 1).Quarter(Month.April));
+            Assert.AreEqual(2, new DateTime(2010, 8, 1).Quarter(Month.April));
+            Assert.AreEqual(2, new DateTime(2010, 9, 1).Quarter(Month.April));
+            Assert.AreEqual(3, new DateTime(2010, 10, 1).Quarter(Month.April));
+            Assert.AreEqual(3, new DateTime(2010, 11, 1).Quarter(Month.April));
+            Assert.AreEqual(3, new DateTime(2010, 12, 1).Quarter(Month.April));
+
+            Assert.AreEqual(3, new DateTime(2010, 1, 1).Quarter(Month.May));
+            Assert.AreEqual(4, new DateTime(2010, 2, 1).Quarter(Month.May));
+            Assert.AreEqual(4, new DateTime(2010, 3, 1).Quarter(Month.May));
+            Assert.AreEqual(4, new DateTime(2010, 4, 1).Quarter(Month.May));
+            Assert.AreEqual(1, new DateTime(2010, 5, 1).Quarter(Month.May));
+            Assert.AreEqual(1, new DateTime(2010, 6, 1).Quarter(Month.May));
+            Assert.AreEqual(1, new DateTime(2010, 7, 1).Quarter(Month.May));
+            Assert.AreEqual(2, new DateTime(2010, 8, 1).Quarter(Month.May));
+            Assert.AreEqual(2, new DateTime(2010, 9, 1).Quarter(Month.May));
+            Assert.AreEqual(2, new DateTime(2010, 10, 1).Quarter(Month.May));
+            Assert.AreEqual(3, new DateTime(2010, 11, 1).Quarter(Month.May));
+            Assert.AreEqual(3, new DateTime(2010, 12, 1).Quarter(Month.May));
+
+            Assert.AreEqual(3, new DateTime(2010, 1, 1).Quarter(Month.June));
+            Assert.AreEqual(3, new DateTime(2010, 2, 1).Quarter(Month.June));
+            Assert.AreEqual(4, new DateTime(2010, 3, 1).Quarter(Month.June));
+            Assert.AreEqual(4, new DateTime(2010, 4, 1).Quarter(Month.June));
+            Assert.AreEqual(4, new DateTime(2010, 5, 1).Quarter(Month.June));
+            Assert.AreEqual(1, new DateTime(2010, 6, 1).Quarter(Month.June));
+            Assert.AreEqual(1, new DateTime(2010, 7, 1).Quarter(Month.June));
+            Assert.AreEqual(1, new DateTime(2010, 8, 1).Quarter(Month.June));
+            Assert.AreEqual(2, new DateTime(2010, 9, 1).Quarter(Month.June));
+            Assert.AreEqual(2, new DateTime(2010, 10, 1).Quarter(Month.June));
+            Assert.AreEqual(2, new DateTime(2010, 11, 1).Quarter(Month.June));
+            Assert.AreEqual(3, new DateTime(2010, 12, 1).Quarter(Month.June));
+
+            Assert.AreEqual(3, new DateTime(2010, 1, 1).Quarter(Month.July));
+            Assert.AreEqual(3, new DateTime(2010, 2, 1).Quarter(Month.July));
+            Assert.AreEqual(3, new DateTime(2010, 3, 1).Quarter(Month.July));
+            Assert.AreEqual(4, new DateTime(2010, 4, 1).Quarter(Month.July));
+            Assert.AreEqual(4, new DateTime(2010, 5, 1).Quarter(Month.July));
+            Assert.AreEqual(4, new DateTime(2010, 6, 1).Quarter(Month.July));
+            Assert.AreEqual(1, new DateTime(2010, 7, 1).Quarter(Month.July));
+            Assert.AreEqual(1, new DateTime(2010, 8, 1).Quarter(Month.July));
+            Assert.AreEqual(1, new DateTime(2010, 9, 1).Quarter(Month.July));
+            Assert.AreEqual(2, new DateTime(2010, 10, 1).Quarter(Month.July));
+            Assert.AreEqual(2, new DateTime(2010, 11, 1).Quarter(Month.July));
+            Assert.AreEqual(2, new DateTime(2010, 12, 1).Quarter(Month.July));
+
+            Assert.AreEqual(2, new DateTime(2010, 1, 1).Quarter(Month.August));
+            Assert.AreEqual(3, new DateTime(2010, 2, 1).Quarter(Month.August));
+            Assert.AreEqual(3, new DateTime(2010, 3, 1).Quarter(Month.August));
+            Assert.AreEqual(3, new DateTime(2010, 4, 1).Quarter(Month.August));
+            Assert.AreEqual(4, new DateTime(2010, 5, 1).Quarter(Month.August));
+            Assert.AreEqual(4, new DateTime(2010, 6, 1).Quarter(Month.August));
+            Assert.AreEqual(4, new DateTime(2010, 7, 1).Quarter(Month.August));
+            Assert.AreEqual(1, new DateTime(2010, 8, 1).Quarter(Month.August));
+            Assert.AreEqual(1, new DateTime(2010, 9, 1).Quarter(Month.August));
+            Assert.AreEqual(1, new DateTime(2010, 10, 1).Quarter(Month.August));
+            Assert.AreEqual(2, new DateTime(2010, 11, 1).Quarter(Month.August));
+            Assert.AreEqual(2, new DateTime(2010, 12, 1).Quarter(Month.August));
+
+            Assert.AreEqual(2, new DateTime(2010, 1, 1).Quarter(Month.September));
+            Assert.AreEqual(2, new DateTime(2010, 2, 1).Quarter(Month.September));
+            Assert.AreEqual(3, new DateTime(2010, 3, 1).Quarter(Month.September));
+            Assert.AreEqual(3, new DateTime(2010, 4, 1).Quarter(Month.September));
+            Assert.AreEqual(3, new DateTime(2010, 5, 1).Quarter(Month.September));
+            Assert.AreEqual(4, new DateTime(2010, 6, 1).Quarter(Month.September));
+            Assert.AreEqual(4, new DateTime(2010, 7, 1).Quarter(Month.September));
+            Assert.AreEqual(4, new DateTime(2010, 8, 1).Quarter(Month.September));
+            Assert.AreEqual(1, new DateTime(2010, 9, 1).Quarter(Month.September));
+            Assert.AreEqual(1, new DateTime(2010, 10, 1).Quarter(Month.September));
+            Assert.AreEqual(1, new DateTime(2010, 11, 1).Quarter(Month.September));
+            Assert.AreEqual(2, new DateTime(2010, 12, 1).Quarter(Month.September));
+
+            Assert.AreEqual(2, new DateTime(2010, 1, 1).Quarter(Month.October));
+            Assert.AreEqual(2, new DateTime(2010, 2, 1).Quarter(Month.October));
+            Assert.AreEqual(2, new DateTime(2010, 3, 1).Quarter(Month.October));
+            Assert.AreEqual(3, new DateTime(2010, 4, 1).Quarter(Month.October));
+            Assert.AreEqual(3, new DateTime(2010, 5, 1).Quarter(Month.October));
+            Assert.AreEqual(3, new DateTime(2010, 6, 1).Quarter(Month.October));
+            Assert.AreEqual(4, new DateTime(2010, 7, 1).Quarter(Month.October));
+            Assert.AreEqual(4, new DateTime(2010, 8, 1).Quarter(Month.October));
+            Assert.AreEqual(4, new DateTime(2010, 9, 1).Quarter(Month.October));
+            Assert.AreEqual(1, new DateTime(2010, 10, 1).Quarter(Month.October));
+            Assert.AreEqual(1, new DateTime(2010, 11, 1).Quarter(Month.October));
+            Assert.AreEqual(1, new DateTime(2010, 12, 1).Quarter(Month.October));
+
+            Assert.AreEqual(1, new DateTime(2010, 1, 1).Quarter(Month.November));
+            Assert.AreEqual(2, new DateTime(2010, 2, 1).Quarter(Month.November));
+            Assert.AreEqual(2, new DateTime(2010, 3, 1).Quarter(Month.November));
+            Assert.AreEqual(2, new DateTime(2010, 4, 1).Quarter(Month.November));
+            Assert.AreEqual(3, new DateTime(2010, 5, 1).Quarter(Month.November));
+            Assert.AreEqual(3, new DateTime(2010, 6, 1).Quarter(Month.November));
+            Assert.AreEqual(3, new DateTime(2010, 7, 1).Quarter(Month.November));
+            Assert.AreEqual(4, new DateTime(2010, 8, 1).Quarter(Month.November));
+            Assert.AreEqual(4, new DateTime(2010, 9, 1).Quarter(Month.November));
+            Assert.AreEqual(4, new DateTime(2010, 10, 1).Quarter(Month.November));
+            Assert.AreEqual(1, new DateTime(2010, 11, 1).Quarter(Month.November));
+            Assert.AreEqual(1, new DateTime(2010, 12, 1).Quarter(Month.November));
+
+            Assert.AreEqual(1, new DateTime(2010, 1, 1).Quarter(Month.December));
+            Assert.AreEqual(1, new DateTime(2010, 2, 1).Quarter(Month.December));
+            Assert.AreEqual(2, new DateTime(2010, 3, 1).Quarter(Month.December));
+            Assert.AreEqual(2, new DateTime(2010, 4, 1).Quarter(Month.December));
+            Assert.AreEqual(2, new DateTime(2010, 5, 1).Quarter(Month.December));
+            Assert.AreEqual(3, new DateTime(2010, 6, 1).Quarter(Month.December));
+            Assert.AreEqual(3, new DateTime(2010, 7, 1).Quarter(Month.December));
+            Assert.AreEqual(3, new DateTime(2010, 8, 1).Quarter(Month.December));
+            Assert.AreEqual(4, new DateTime(2010, 9, 1).Quarter(Month.December));
+            Assert.AreEqual(4, new DateTime(2010, 10, 1).Quarter(Month.December));
+            Assert.AreEqual(4, new DateTime(2010, 11, 1).Quarter(Month.December));
+            Assert.AreEqual(1, new DateTime(2010, 12, 1).Quarter(Month.December));
+
+        }
+
     }
 }

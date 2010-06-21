@@ -45,14 +45,29 @@ namespace TemporalToolkit.Extensions
         }
 
         /// <summary>
-        /// Returns the quater the date is in assuming
-        /// quarters start jan 1st
+        /// Returns the quater the date is in, assuming
+        /// the year starts jan 1st
         /// </summary>
         /// <param name="aDate"></param>
         /// <returns></returns>
         public static int Quarter(this System.DateTime aDate)
         {
-            return (int)Math.Ceiling((double)(aDate.Month / 3M));
+            return aDate.Quarter(Month.January);
+        }
+
+        /// <summary>
+        /// Returns quarter date is in based on specifed
+        /// start of year
+        /// </summary>
+        /// <param name="aDate"></param>
+        /// <param name="startOfQuarter">Start of the year</param>
+        /// <returns></returns>
+        public static int Quarter(this System.DateTime aDate, Month startOfYear)
+        {
+            int offset;
+            offset = (((int)startOfYear -1) * -1) + aDate.Month;
+            if(offset <= 0) offset = 12 - (Math.Abs(offset));
+            return (int)Math.Ceiling((double)((offset) / 3M));
         }
 
     }

@@ -5,7 +5,7 @@
 | About
 ------------------------------
  
- Version 1.0.0 (2010/6/11)
+ Version 1.0 
 
  Temporal Toolkit is a library used for representing/manipulating dates & time.
  
@@ -16,8 +16,8 @@
 ------------------------------
 | Development/Building
 ------------------------------ 
- Requirements: Visual Studio 2008
-	       NUnit
+ Requirements: -Visual Studio 2008
+	       -NUnit
  
  The solution is organized into 2 projects: the toolkit library and the unit tests. Running the unit tests
  requires NUnit.
@@ -31,19 +31,23 @@
  
  Add reference to TemporalToolkit.dll to your project.   
     
-    --------------------------
-    | Using Temporal Expressions
-    --------------------------
+  --------------------------
+  | Using Temporal Expressions
+  --------------------------
         Add the following to the top of your code:
-                C#: using TemporalToolkit.TemporalExpressions;
+               
+		C#: using TemporalToolkit.TemporalExpressions;
             VB.NET: Imports TemporalToolkit.TemporalExpressions
         
         Then use operators: &,|,- to build temporal expressions.
+          
+	  //Represents first day of every month in the year 2010.
           TemporalExpression te = new TEYear(2010) & TEDayOfMonth(DayOfWeek.Monday, 1);
+          //Use include to test if your date falls on the specified temporal expression.
           bool result = te.Includes(new DateTime(2010,1,6));
         
-    ---------------------------
-    | Using Date Extension Methods
-    ---------------------------
+  ---------------------------
+  |  Using Date Extension Methods
+  ---------------------------
             C#: using TemporalToolkit.Extensions;
         VB.NET: Imports TemporalToolkit.Extensions;    
