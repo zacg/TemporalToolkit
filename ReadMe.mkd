@@ -7,19 +7,20 @@
  
  Version 1.0 
 
- Temporal Toolkit is a library for representing/manipulating dates & time.
+ Temporal Toolkit is a library for handling dates & time.
  
- The temporal expressions are based on a paper by Martin Fowler (www.martinfowler.com/apsupp/recurring.pdf).
- and the ruby runt library (www.runt.rubyforge.org)
+ The temporal expressions included in Temporal Toolkit are based on a paper by Martin Fowler (http://www.martinfowler.com/apsupp/recurring.pdf) and the ruby runt library (http://www.runt.rubyforge.org)
  
 
 
- Development/Building
+ Development
 ------------------------------ 
- Requirements: -Visual Studio 2008
-	       -NUnit
+ Requirements:
  
- The solution is organized into 2 projects: the toolkit library and the unit tests. Running the unit tests
+  * Visual Studio 2008
+  * NUnit
+ 
+The solution is organized into 2 projects: the toolkit library and the unit tests. Running the unit tests
  requires NUnit.
 
  To create new temporal expressions just create a class that inherits from the TemporalExpression class.
@@ -32,22 +33,28 @@
  Add reference to TemporalToolkit.dll to your project.   
     
  
-   Using Temporal Expressions
-  ----------------------------
-        Add the following to the top of your code:
+Using Temporal Expressions
+----------------------------
+
+Add the following to the top of your code:
                
-		C#: `using TemporalToolkit.TemporalExpressions;`
-            VB.NET: `Imports TemporalToolkit.TemporalExpressions`
+ C#: 
+`using TemporalToolkit.TemporalExpressions;`
+ VB.NET: 
+`Imports TemporalToolkit.TemporalExpressions`
         
-        Then use operators: `&,|,-` to build temporal expressions.
+  Then use operators: `&,|,-`  to build temporal expressions.
           
-	  `//Represents first day of every month in the year 2010.
-          TemporalExpression te = new TEYear(2010) & TEDayOfMonth(DayOfWeek.Monday, 1);
-          //Use include to test if your date falls on the specified temporal expression.
-          bool result = te.Includes(new DateTime(2010,1,6));`
+Represents first day of every month in the year 2010.
+    `TemporalExpression te = new TEYear(2010) & TEDayOfMonth(DayOfWeek.Monday, 1);`
+Use include to test if your date falls on the specified temporal expression.
+    `bool result = te.Includes(new DateTime(2010,1,6));`
         
   
-    Using Date Extension Methods
-  -------------------------------
-            C#: `using TemporalToolkit.Extensions;`
-        VB.NET: `Imports TemporalToolkit.Extensions;`    
+  
+Using Date Extension Methods
+-------------------------------
+   C#: 
+    `using TemporalToolkit.Extensions;`
+  VB.NET: 
+    `Imports TemporalToolkit.Extensions;`    
