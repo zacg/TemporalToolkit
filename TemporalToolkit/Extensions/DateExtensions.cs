@@ -50,7 +50,7 @@ namespace TemporalToolkit.Extensions
         /// </summary>
         /// <param name="aDate"></param>
         /// <returns></returns>
-        public static int Quarter(this System.DateTime aDate)
+        public static Quarter Quarter(this System.DateTime aDate)
         {
             return aDate.Quarter(Month.January);
         }
@@ -62,12 +62,12 @@ namespace TemporalToolkit.Extensions
         /// <param name="aDate"></param>
         /// <param name="startOfQuarter">Start of the year</param>
         /// <returns></returns>
-        public static int Quarter(this System.DateTime aDate, Month startOfYear)
+        public static Quarter Quarter(this System.DateTime aDate, Month startOfYear)
         {
             int offset;
             offset = (((int)startOfYear -1) * -1) + aDate.Month;
             if(offset <= 0) offset = 12 - (Math.Abs(offset));
-            return (int)Math.Ceiling((double)((offset) / 3M));
+            return (Quarter)Math.Ceiling((double)((offset) / 3M));
         }
 
     }

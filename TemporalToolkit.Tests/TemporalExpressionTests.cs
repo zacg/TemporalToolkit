@@ -262,6 +262,47 @@ namespace TemporalToolkit.Tests
         }
 
         [Test]
+        public void TE_Quarter()
+        {
+            //single quarter jan 1st start of year
+            TEQuarter te = new TEQuarter(Quarter.First);
+            Assert.IsTrue(te.Includes(new DateTime(2010, 1, 1)));
+            Assert.IsTrue(te.Includes(new DateTime(2010, 2, 1)));
+            Assert.IsTrue(te.Includes(new DateTime(2010, 3, 1)));
+            Assert.IsFalse(te.Includes(new DateTime(2010, 4, 1)));
+
+            //range of quarters 2nd-3rd, jan 1st start of year
+            TEQuarter ter = new TEQuarter(Quarter.Second, Quarter.Third);
+            Assert.IsTrue(ter.Includes(new DateTime(2010, 4, 1)));
+            Assert.IsTrue(ter.Includes(new DateTime(2010, 5, 1)));
+            Assert.IsTrue(ter.Includes(new DateTime(2010, 6, 1)));
+            Assert.IsTrue(ter.Includes(new DateTime(2010, 7, 1)));
+            Assert.IsTrue(ter.Includes(new DateTime(2010, 8, 1)));
+            Assert.IsTrue(ter.Includes(new DateTime(2010, 9, 1)));
+            Assert.IsFalse(ter.Includes(new DateTime(2010, 10, 1)));
+
+            //single quarter July 1st start of year
+            TEQuarter tey = new TEQuarter(Quarter.First, Month.July);
+            Assert.IsTrue(tey.Includes(new DateTime(2010, 7, 1)));
+            Assert.IsTrue(tey.Includes(new DateTime(2010, 8, 1)));
+            Assert.IsTrue(tey.Includes(new DateTime(2010, 9, 1)));
+            Assert.IsFalse(tey.Includes(new DateTime(2010, 10, 1)));
+            Assert.IsFalse(tey.Includes(new DateTime(2010, 6, 1)));
+
+            //range of quarters 2nd-3rd, july 1st start of year
+            TEQuarter teyr = new TEQuarter(Quarter.Second, Quarter.Third, Month.July);
+            Assert.IsTrue(teyr.Includes(new DateTime(2010, 10, 1)));
+            Assert.IsTrue(teyr.Includes(new DateTime(2010, 11, 1)));
+            Assert.IsTrue(teyr.Includes(new DateTime(2010, 12, 1)));
+            Assert.IsTrue(teyr.Includes(new DateTime(2010, 1, 1)));
+            Assert.IsTrue(teyr.Includes(new DateTime(2010, 2, 1)));
+            Assert.IsTrue(teyr.Includes(new DateTime(2010, 3, 1)));
+            Assert.IsFalse(teyr.Includes(new DateTime(2010, 9, 1)));
+            Assert.IsFalse(teyr.Includes(new DateTime(2010, 8, 1)));
+
+        }
+
+        [Test]
         public void UnionTest()
         {
             //And (union)

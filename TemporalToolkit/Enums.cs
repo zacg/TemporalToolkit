@@ -5,6 +5,15 @@ using System.Text;
 
 namespace TemporalToolkit
 {
+
+    public enum Quarter
+    {
+        Unset = 0,
+        First = 1,
+        Second = 2,
+        Third = 3,
+        Fourth = 4
+    }
     
     public enum IntervalPrecision
     {
