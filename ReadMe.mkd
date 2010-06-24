@@ -43,7 +43,7 @@ Add the following to the top of your code:
  VB.NET: 
     Imports TemporalToolkit.TemporalExpressions
         
-  Then use operators: `&,|,-`  to build temporal expressions.
+  Then use operators: `& | -`  to build temporal expressions.
           
 Represents first day of every month in the year 2010.
     TemporalExpression te = new TEYear(2010) & new TEDayOfMonth(DayOfWeek.Monday, 1);
