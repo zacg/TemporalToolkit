@@ -15,7 +15,8 @@ namespace TemporalToolkit.TemporalExpressions
         public int? End { get; set; }
 
         /// <summary>
-        /// Checks for day of month
+        /// Checks for day of month, if negative number is passed
+        /// it will count days from end of month.
         /// </summary>
         /// <param name="day">Day of month to check</param>
         public TEDayInMonth(int day)
@@ -42,12 +43,24 @@ namespace TemporalToolkit.TemporalExpressions
         /// <returns></returns>
         public override bool Includes(DateTime aDate)
         {
+            bool result;
+
             if (this.End.HasValue)
             {
                 if (this.Start > this.End.Value) throw new ArgumentException("Start of range must be less than end of range");
-                return (aDate.Day >= this.Start && aDate.Day <= this.End.Value);
+                result = (aDate.Day >= this.Start && aDate.Day <= this.End.Value);
             }
-            else  return (aDate.Day == this.Start);
+            else
+            {
+                //count from end of month if negative number
+                if (this.Start > 0)
+                    result = (aDate.Day == this.Start);
+                else
+                    result = (((DateTime.DaysInMonth(aDate.Year, aDate.Month) + this.Start) + 1) == aDate.Day);
+
+            }
+
+            return result;
         }
     }
 }

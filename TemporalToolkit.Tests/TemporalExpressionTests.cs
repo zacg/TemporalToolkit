@@ -115,6 +115,16 @@ namespace TemporalToolkit.Tests
             Assert.IsFalse(temr.Includes(new DateTime(2012, 8, 3)));
             Assert.IsFalse(temr.Includes(new DateTime(1998, 9, 15)));
 
+            //negative
+            TEDayInMonth ten = new TEDayInMonth(-4);
+            Assert.IsTrue(ten.Includes(new DateTime(2010, 6, 27)));
+            Assert.IsTrue(ten.Includes(new DateTime(2010, 7, 28)));
+            Assert.IsTrue(ten.Includes(new DateTime(2010, 5, 28)));
+
+            Assert.IsFalse(ten.Includes(new DateTime(2010, 6, 26)));
+            Assert.IsFalse(ten.Includes(new DateTime(2010, 7, 29)));
+            Assert.IsFalse(ten.Includes(new DateTime(2010, 5, 27)));
+
         }
 
         [Test]
