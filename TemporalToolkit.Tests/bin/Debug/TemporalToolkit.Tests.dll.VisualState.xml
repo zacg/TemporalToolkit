@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1024]C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll</TopNode>
-  <SelectedNode>[0-1025]TemporalToolkit</SelectedNode>
+  <TopNode>[0-1030]C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll</TopNode>
+  <SelectedNode>[0-1031]TemporalToolkit</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1024]C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll" Expanded="true">
+    <Node UniqueName="[0-1030]C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll" Expanded="true">
       <Nodes>
-        <Node UniqueName="[0-1025]TemporalToolkit" Expanded="true">
+        <Node UniqueName="[0-1031]TemporalToolkit" Expanded="true">
           <Nodes>
-            <Node UniqueName="[0-1026]TemporalToolkit.Tests" Expanded="true">
+            <Node UniqueName="[0-1032]TemporalToolkit.Tests" Expanded="true">
               <Nodes>
+                <Node UniqueName="[0-1024]TemporalToolkit.Tests.ExpressionBaseTests" Expanded="true">
+                  <Nodes>
+                    <Node UniqueName="[0-1028]TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceDay" />
+                    <Node UniqueName="[0-1026]TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceMinute" />
+                    <Node UniqueName="[0-1027]TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceSecond" />
+                    <Node UniqueName="[0-1025]TemporalToolkit.Tests.ExpressionBaseTests.OccurrencesHour" />
+                    <Node UniqueName="[0-1029]TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceWeek" />
+                  </Nodes>
+                </Node>
                 <Node UniqueName="[0-1006]TemporalToolkit.Tests.ExpressionTimeTests" Expanded="true">
                   <Nodes>
                     <Node UniqueName="[0-1009]TemporalToolkit.Tests.ExpressionTimeTests.TE_Hour" />

@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExpressionBaseTests.cs" />
     <Compile Include="ExpressionTimeTests.cs" />
     <Compile Include="ExtensionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
