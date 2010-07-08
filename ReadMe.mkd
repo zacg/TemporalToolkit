@@ -7,7 +7,7 @@
  
  Version 1.0 
 
- Temporal Toolkit is a library for handling dates & time.
+ Temporal Toolkit is a library for handling dates & time. It allows you to represent complex recurring time patterns like "the second tuesday of every month at noon except december and october" in code.
  
  The temporal expressions included in Temporal Toolkit are based on a paper by Martin Fowler (http://www.martinfowler.com/apsupp/recurring.pdf) and the ruby runt library (http://www.runt.rubyforge.org)
  
@@ -45,6 +45,7 @@ Add the following to the top of your code:
         
   Then use operators: `& | -`  to build temporal expressions.
           
+E.g.
 Represents first day of every month in the year 2010.
     TemporalExpression te = new TEYear(2010) & new TEDayOfMonth(DayOfWeek.Monday, 1);
 Use include to test if your date falls on the specified temporal expression.
