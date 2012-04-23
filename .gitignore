@@ -1,2 +1,5 @@
 
 /TemporalToolkit/bin
+/TemporalToolkit/obj
+/TemporalToolkit.Tests/bin
+/TemporalToolkit.Tests/obj

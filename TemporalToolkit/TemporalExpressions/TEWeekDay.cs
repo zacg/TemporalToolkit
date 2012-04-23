@@ -17,6 +17,17 @@ namespace TemporalToolkit.TemporalExpressions
         /// <summary>
         /// Checks a single day, e.g. Monday
         /// </summary>
+        /// <param name="date">date to compare</param>
+        public TEWeekDay(DateTime date)
+        {
+            this.Start = date.DayOfWeek;
+            this.End = null;
+        }
+        
+
+        /// <summary>
+        /// Checks a single day, e.g. Monday
+        /// </summary>
         /// <param name="day">Day to compare</param>
         public TEWeekDay(System.DayOfWeek day)
         {

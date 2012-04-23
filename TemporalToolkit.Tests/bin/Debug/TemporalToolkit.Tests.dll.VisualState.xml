@@ -1,62 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1030]C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll</TopNode>
+  <TopNode>[0-1030]C:\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll</TopNode>
   <SelectedNode>[0-1031]TemporalToolkit</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1030]C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll" Expanded="true">
-      <Nodes>
-        <Node UniqueName="[0-1031]TemporalToolkit" Expanded="true">
-          <Nodes>
-            <Node UniqueName="[0-1032]TemporalToolkit.Tests" Expanded="true">
-              <Nodes>
-                <Node UniqueName="[0-1024]TemporalToolkit.Tests.ExpressionBaseTests" Expanded="true">
-                  <Nodes>
-                    <Node UniqueName="[0-1028]TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceDay" />
-                    <Node UniqueName="[0-1026]TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceMinute" />
-                    <Node UniqueName="[0-1027]TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceSecond" />
-                    <Node UniqueName="[0-1025]TemporalToolkit.Tests.ExpressionBaseTests.OccurrencesHour" />
-                    <Node UniqueName="[0-1029]TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceWeek" />
-                  </Nodes>
-                </Node>
-                <Node UniqueName="[0-1006]TemporalToolkit.Tests.ExpressionTimeTests" Expanded="true">
-                  <Nodes>
-                    <Node UniqueName="[0-1009]TemporalToolkit.Tests.ExpressionTimeTests.TE_Hour" />
-                    <Node UniqueName="[0-1008]TemporalToolkit.Tests.ExpressionTimeTests.TE_Minute" />
-                    <Node UniqueName="[0-1007]TemporalToolkit.Tests.ExpressionTimeTests.TE_Second" />
-                  </Nodes>
-                </Node>
-                <Node UniqueName="[0-1000]TemporalToolkit.Tests.ExtensionTests" Expanded="true">
-                  <Nodes>
-                    <Node UniqueName="[0-1003]TemporalToolkit.Tests.ExtensionTests.DateOccurrence" />
-                    <Node UniqueName="[0-1004]TemporalToolkit.Tests.ExtensionTests.QuarterDefault" />
-                    <Node UniqueName="[0-1005]TemporalToolkit.Tests.ExtensionTests.QuarterDiffYearStart" />
-                    <Node UniqueName="[0-1001]TemporalToolkit.Tests.ExtensionTests.WeekEnd" />
-                    <Node UniqueName="[0-1002]TemporalToolkit.Tests.ExtensionTests.WeekStart" />
-                  </Nodes>
-                </Node>
-                <Node UniqueName="[0-1010]TemporalToolkit.Tests.TemporalExpressionTests" Expanded="true">
-                  <Nodes>
-                    <Node UniqueName="[0-1023]TemporalToolkit.Tests.TemporalExpressionTests.ComplexExpressions" />
-                    <Node UniqueName="[0-1022]TemporalToolkit.Tests.TemporalExpressionTests.Difference" />
-                    <Node UniqueName="[0-1021]TemporalToolkit.Tests.TemporalExpressionTests.IntersectTest" />
-                    <Node UniqueName="[0-1017]TemporalToolkit.Tests.TemporalExpressionTests.TE_After" />
-                    <Node UniqueName="[0-1016]TemporalToolkit.Tests.TemporalExpressionTests.TE_Before" />
-                    <Node UniqueName="[0-1014]TemporalToolkit.Tests.TemporalExpressionTests.TE_DayInMonth" />
-                    <Node UniqueName="[0-1015]TemporalToolkit.Tests.TemporalExpressionTests.TE_DayOfMonth" />
-                    <Node UniqueName="[0-1018]TemporalToolkit.Tests.TemporalExpressionTests.TE_Interval" />
-                    <Node UniqueName="[0-1011]TemporalToolkit.Tests.TemporalExpressionTests.TE_Month" />
-                    <Node UniqueName="[0-1019]TemporalToolkit.Tests.TemporalExpressionTests.TE_Quarter" />
-                    <Node UniqueName="[0-1012]TemporalToolkit.Tests.TemporalExpressionTests.TE_Weekday" />
-                    <Node UniqueName="[0-1013]TemporalToolkit.Tests.TemporalExpressionTests.TE_Year" />
-                    <Node UniqueName="[0-1020]TemporalToolkit.Tests.TemporalExpressionTests.UnionTest" />
-                  </Nodes>
-                </Node>
-              </Nodes>
-            </Node>
-          </Nodes>
-        </Node>
-      </Nodes>
-    </Node>
+    <Node UniqueName="[0-1030]C:\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1031]TemporalToolkit" Expanded="true" />
+    <Node UniqueName="[0-1032]TemporalToolkit.Tests" Expanded="true" />
+    <Node UniqueName="[0-1024]TemporalToolkit.Tests.ExpressionBaseTests" Expanded="true" />
+    <Node UniqueName="[0-1006]TemporalToolkit.Tests.ExpressionTimeTests" Expanded="true" />
+    <Node UniqueName="[0-1000]TemporalToolkit.Tests.ExtensionTests" Expanded="true" />
+    <Node UniqueName="[0-1010]TemporalToolkit.Tests.TemporalExpressionTests" Expanded="true" />
   </Nodes>
 </VisualState>

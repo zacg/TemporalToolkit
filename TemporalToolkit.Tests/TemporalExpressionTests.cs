@@ -64,6 +64,16 @@ namespace TemporalToolkit.Tests
             Assert.IsFalse(tew.Includes(new DateTime(2010, 6, 14)));
             Assert.IsFalse(tew.Includes(new DateTime(2010, 7, 12)));
 
+            //date param
+            tew = new TEWeekDay(new DateTime(2010,1,6));
+            Assert.IsTrue(tew.Includes(new DateTime(2010, 6, 2)));
+            Assert.IsTrue(tew.Includes(new DateTime(2010, 6, 23)));
+            Assert.IsTrue(tew.Includes(new DateTime(2011, 6, 8)));
+            Assert.IsTrue(tew.Includes(new DateTime(2010, 7, 7)));
+            Assert.IsFalse(tew.Includes(new DateTime(2010, 6, 1)));
+            Assert.IsFalse(tew.Includes(new DateTime(2010, 6, 14)));
+            Assert.IsFalse(tew.Includes(new DateTime(2010, 7, 12)));
+
             //range
             TEWeekDay tewr = new TEWeekDay(DayOfWeek.Monday, DayOfWeek.Friday);
 
