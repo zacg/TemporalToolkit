@@ -15,6 +15,15 @@ namespace TemporalToolkit.TemporalExpressions
         public int? End { get; set; }
 
         /// <summary>
+        /// Checks for day of month
+        /// </summary>
+        public TEDayInMonth(DateTime date)
+        {
+            this.Start = date.Day;
+            this.End = null;
+        }
+
+        /// <summary>
         /// Checks for day of month, if negative number is passed
         /// it will count days from end of month.
         /// </summary>

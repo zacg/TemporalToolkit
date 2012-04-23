@@ -13,8 +13,32 @@ namespace TemporalToolkit.TemporalExpressions
         public Month Start { get; set; }
         public Month? End { get; set; }
 
+
         /// <summary>
-        /// Checks for month match
+        /// Checks for month match based on month of specified date.
+        /// </summary>
+        /// <param name="month"></param>
+        public TEMonth(DateTime date)
+        {
+            this.Start = (Month.January);
+            this.End = null;
+        }
+
+        /// <summary>
+        /// Checks for month match, month should be 1-12 value
+        /// </summary>
+        /// <param name="month"></param>
+        public TEMonth(int month)
+        {
+            if (month > 12 || month < 1)
+                throw new ArgumentOutOfRangeException("month");
+
+            this.Start = (Month)month;
+            this.End = null;
+        }
+
+        /// <summary>
+        /// Checks for month match.
         /// </summary>
         /// <param name="month"></param>
         public TEMonth(Month month)

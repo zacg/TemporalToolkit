@@ -1,54 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll" total="26" failures="0" not-run="0" date="2010-07-06" time="19:19:33">
-  <environment nunit-version="2.4.8.0" clr-version="2.0.50727.3053" os-version="Microsoft Windows NT 5.2.3790 Service Pack 2" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.4.8\bin" machine-name="BLACKBOX" user="Administrator" user-domain="BLACKBOX" />
+<test-results name="C:\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll" total="26" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-04-22" time="22:24:59">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.3053" os-version="Microsoft Windows NT 5.2.3790 Service Pack 2" platform="Win32NT" cwd="C:\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug" machine-name="BLACKBOX" user="Administrator" user-domain="BLACKBOX" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite name="C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll" success="True" time="0.219" asserts="0">
+  <test-suite type="Assembly" name="C:\Projects\TemporalToolkit\TemporalToolkit.Tests\bin\Debug\TemporalToolkit.Tests.dll" executed="True" result="Success" success="True" time="0.406" asserts="0">
     <results>
-      <test-suite name="TemporalToolkit" success="True" time="0.219" asserts="0">
+      <test-suite type="Namespace" name="TemporalToolkit" executed="True" result="Success" success="True" time="0.391" asserts="0">
         <results>
-          <test-suite name="Tests" success="True" time="0.219" asserts="0">
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.391" asserts="0">
             <results>
-              <test-suite name="ExpressionBaseTests" success="True" time="0.094" asserts="0">
+              <test-suite type="TestFixture" name="ExpressionBaseTests" executed="True" result="Success" success="True" time="0.250" asserts="0">
                 <results>
-                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceDay" executed="True" success="True" time="0.031" asserts="6" />
-                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceMinute" executed="True" success="True" time="0.016" asserts="6" />
-                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceSecond" executed="True" success="True" time="0.000" asserts="6" />
-                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrencesHour" executed="True" success="True" time="0.000" asserts="8" />
-                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceWeek" executed="True" success="True" time="0.000" asserts="6" />
+                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceDay" executed="True" result="Success" success="True" time="0.172" asserts="6" />
+                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceMinute" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceSecond" executed="True" result="Success" success="True" time="0.016" asserts="6" />
+                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrencesHour" executed="True" result="Success" success="True" time="0.000" asserts="8" />
+                  <test-case name="TemporalToolkit.Tests.ExpressionBaseTests.OccurrenceWeek" executed="True" result="Success" success="True" time="0.016" asserts="6" />
                 </results>
               </test-suite>
-              <test-suite name="ExpressionTimeTests" success="True" time="0.016" asserts="0">
+              <test-suite type="TestFixture" name="ExpressionTimeTests" executed="True" result="Success" success="True" time="0.016" asserts="0">
                 <results>
-                  <test-case name="TemporalToolkit.Tests.ExpressionTimeTests.TE_Hour" executed="True" success="True" time="0.016" asserts="16" />
-                  <test-case name="TemporalToolkit.Tests.ExpressionTimeTests.TE_Minute" executed="True" success="True" time="0.000" asserts="26" />
-                  <test-case name="TemporalToolkit.Tests.ExpressionTimeTests.TE_Second" executed="True" success="True" time="0.000" asserts="25" />
+                  <test-case name="TemporalToolkit.Tests.ExpressionTimeTests.TE_Hour" executed="True" result="Success" success="True" time="0.000" asserts="16" />
+                  <test-case name="TemporalToolkit.Tests.ExpressionTimeTests.TE_Minute" executed="True" result="Success" success="True" time="0.000" asserts="26" />
+                  <test-case name="TemporalToolkit.Tests.ExpressionTimeTests.TE_Second" executed="True" result="Success" success="True" time="0.000" asserts="25" />
                 </results>
               </test-suite>
-              <test-suite name="ExtensionTests" success="True" time="0.031" asserts="0">
+              <test-suite type="TestFixture" name="ExtensionTests" executed="True" result="Success" success="True" time="0.047" asserts="0">
                 <results>
-                  <test-case name="TemporalToolkit.Tests.ExtensionTests.DateOccurrence" executed="True" success="True" time="0.000" asserts="4" />
-                  <test-case name="TemporalToolkit.Tests.ExtensionTests.QuarterDefault" executed="True" success="True" time="0.016" asserts="12" />
-                  <test-case name="TemporalToolkit.Tests.ExtensionTests.QuarterDiffYearStart" executed="True" success="True" time="0.016" asserts="144" />
-                  <test-case name="TemporalToolkit.Tests.ExtensionTests.WeekEnd" executed="True" success="True" time="0.000" asserts="4" />
-                  <test-case name="TemporalToolkit.Tests.ExtensionTests.WeekStart" executed="True" success="True" time="0.000" asserts="3" />
+                  <test-case name="TemporalToolkit.Tests.ExtensionTests.DateOccurrence" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+                  <test-case name="TemporalToolkit.Tests.ExtensionTests.QuarterDefault" executed="True" result="Success" success="True" time="0.000" asserts="12" />
+                  <test-case name="TemporalToolkit.Tests.ExtensionTests.QuarterDiffYearStart" executed="True" result="Success" success="True" time="0.016" asserts="144" />
+                  <test-case name="TemporalToolkit.Tests.ExtensionTests.WeekEnd" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+                  <test-case name="TemporalToolkit.Tests.ExtensionTests.WeekStart" executed="True" result="Success" success="True" time="0.016" asserts="3" />
                 </results>
               </test-suite>
-              <test-suite name="TemporalExpressionTests" success="True" time="0.063" asserts="0">
+              <test-suite type="TestFixture" name="TemporalExpressionTests" executed="True" result="Success" success="True" time="0.078" asserts="0">
                 <results>
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.ComplexExpressions" executed="True" success="True" time="0.016" asserts="8" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.Difference" executed="True" success="True" time="0.000" asserts="9" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.IntersectTest" executed="True" success="True" time="0.000" asserts="9" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_After" executed="True" success="True" time="0.000" asserts="6" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Before" executed="True" success="True" time="0.000" asserts="6" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_DayInMonth" executed="True" success="True" time="0.000" asserts="18" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_DayOfMonth" executed="True" success="True" time="0.000" asserts="12" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Interval" executed="True" success="True" time="0.000" asserts="48" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Month" executed="True" success="True" time="0.016" asserts="12" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Quarter" executed="True" success="True" time="0.000" asserts="24" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Weekday" executed="True" success="True" time="0.000" asserts="18" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Year" executed="True" success="True" time="0.016" asserts="12" />
-                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.UnionTest" executed="True" success="True" time="0.000" asserts="9" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.ComplexExpressions" executed="True" result="Success" success="True" time="0.000" asserts="8" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.Difference" executed="True" result="Success" success="True" time="0.016" asserts="9" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.IntersectTest" executed="True" result="Success" success="True" time="0.000" asserts="9" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_After" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Before" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_DayInMonth" executed="True" result="Success" success="True" time="0.000" asserts="24" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_DayOfMonth" executed="True" result="Success" success="True" time="0.000" asserts="18" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Interval" executed="True" result="Success" success="True" time="0.016" asserts="48" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Month" executed="True" result="Success" success="True" time="0.000" asserts="22" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Quarter" executed="True" result="Success" success="True" time="0.016" asserts="24" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Weekday" executed="True" result="Success" success="True" time="0.000" asserts="18" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.TE_Year" executed="True" result="Success" success="True" time="0.000" asserts="12" />
+                  <test-case name="TemporalToolkit.Tests.TemporalExpressionTests.UnionTest" executed="True" result="Success" success="True" time="0.016" asserts="9" />
                 </results>
               </test-suite>
             </results>

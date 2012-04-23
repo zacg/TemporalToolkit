@@ -15,11 +15,27 @@ namespace TemporalToolkit.Tests
         [Test]
         public void TE_Month()
         {
-            //SIngle Month
+            //Single Month
             TEMonth tem = new TEMonth(Month.January);
             Assert.IsTrue(tem.Includes(new DateTime(2010,1,1)));
             Assert.IsTrue(tem.Includes(new DateTime(2011,1,1)));
             Assert.IsTrue(tem.Includes(new DateTime(2011,1,23)));
+            Assert.IsFalse(tem.Includes(new DateTime(2011, 2, 1)));
+            Assert.IsFalse(tem.Includes(new DateTime(2011, 8, 20)));
+
+            //Single Month
+            tem = new TEMonth(new DateTime(2012,1,1));
+            Assert.IsTrue(tem.Includes(new DateTime(2010, 1, 1)));
+            Assert.IsTrue(tem.Includes(new DateTime(2011, 1, 1)));
+            Assert.IsTrue(tem.Includes(new DateTime(2011, 1, 23)));
+            Assert.IsFalse(tem.Includes(new DateTime(2011, 2, 1)));
+            Assert.IsFalse(tem.Includes(new DateTime(2011, 8, 20)));
+
+            //Single Month
+            tem = new TEMonth(1);
+            Assert.IsTrue(tem.Includes(new DateTime(2010, 1, 1)));
+            Assert.IsTrue(tem.Includes(new DateTime(2011, 1, 1)));
+            Assert.IsTrue(tem.Includes(new DateTime(2011, 1, 23)));
             Assert.IsFalse(tem.Includes(new DateTime(2011, 2, 1)));
             Assert.IsFalse(tem.Includes(new DateTime(2011, 8, 20)));
 
@@ -105,6 +121,16 @@ namespace TemporalToolkit.Tests
             Assert.IsFalse(tem.Includes(new DateTime(2012, 8, 3)));
             Assert.IsFalse(tem.Includes(new DateTime(1998, 9, 5)));
 
+            //date param
+            tem = new TEDayInMonth(new DateTime(2012,1,4));
+            Assert.IsTrue(tem.Includes(new DateTime(2010, 6, 4)));
+            Assert.IsTrue(tem.Includes(new DateTime(2010, 8, 4)));
+            Assert.IsTrue(tem.Includes(new DateTime(2011, 9, 4)));
+
+            Assert.IsFalse(tem.Includes(new DateTime(2010, 6, 2)));
+            Assert.IsFalse(tem.Includes(new DateTime(2012, 8, 3)));
+            Assert.IsFalse(tem.Includes(new DateTime(1998, 9, 5)));
+
             //range
             TEDayInMonth temr = new TEDayInMonth(5, 10);
             Assert.IsTrue(temr.Includes(new DateTime(2010, 5, 5)));
@@ -139,6 +165,17 @@ namespace TemporalToolkit.Tests
             Assert.IsFalse(tem.Includes(new DateTime(2010, 6, 8)));
             Assert.IsFalse(tem.Includes(new DateTime(2010, 6, 3)));
             Assert.IsFalse(tem.Includes(new DateTime(2011, 6, 7)));
+
+            //date param
+            tem = new TEDayOfMonth(new DateTime(2010,1,4));
+            Assert.IsTrue(tem.Includes(new DateTime(2010, 6, 7)));
+            Assert.IsTrue(tem.Includes(new DateTime(2010, 7, 5)));
+            Assert.IsTrue(tem.Includes(new DateTime(2011, 6, 6)));
+
+            Assert.IsFalse(tem.Includes(new DateTime(2010, 6, 8)));
+            Assert.IsFalse(tem.Includes(new DateTime(2010, 6, 3)));
+            Assert.IsFalse(tem.Includes(new DateTime(2011, 6, 7)));
+
 
             //test counting from end of month (-1 == last occurrence)
             TEDayOfMonth tem2 = new TEDayOfMonth(DayOfWeek.Thursday, -1);

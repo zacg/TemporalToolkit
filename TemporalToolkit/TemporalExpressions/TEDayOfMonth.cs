@@ -16,7 +16,19 @@ namespace TemporalToolkit.TemporalExpressions
     {
         public System.DayOfWeek Day { get; set; }
         public int Occurrence { get; set; }
-        
+
+        /// <summary>
+        /// Checks for day of month for specified date
+        /// </summary>
+        /// <param name="day">Day of week</param>
+        /// <param name="occurrence">Occurrence of day in the month. Use negative integers to
+        /// count from end of month. e.g -1 = last occurrence</param>
+        public TEDayOfMonth(DateTime date)
+        {
+            this.Day = date.DayOfWeek;
+            this.Occurrence = date.OccurrenceOfDayInMonth();
+        }
+
         /// <summary>
         /// 
         /// </summary>
